@@ -1,0 +1,152 @@
+.admin-dashboard-container {
+  padding: 2rem 0;
+  background-color: var(--background-color);
+  min-height: calc(100vh - 160px); /* Adjust based on header and footer height */
+}
+
+.admin-dashboard-title {
+  color: var(--text-color);
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.no-orders-message {
+  text-align: center;
+  color: var(--dark-grey);
+  font-size: 1.1rem;
+  padding: 2rem;
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.orders-table-container {
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+  overflow-x: auto;
+  border: 1px solid var(--light-grey);
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.orders-table th,
+.orders-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid var(--medium-grey);
+}
+
+.orders-table th {
+  background-color: var(--light-grey);
+  color: var(--text-color);
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.orders-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.orders-table tbody tr:hover {
+  background-color: var(--light-grey);
+}
+
+.order-items-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.order-items-list li {
+  margin-bottom: 5px;
+  color: var(--dark-grey);
+}
+
+.order-items-list li:last-child {
+  margin-bottom: 0;
+}
+
+.action-button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-weight: 500;
+  margin-right: 5px;
+  transition: all 0.3s ease;
+}
+
+.action-button:last-child {
+  margin-right: 0;
+}
+
+.action-button.accept {
+  background-color: #28a745;
+  color: var(--white);
+}
+
+.action-button.accept:hover {
+  background-color: #218838;
+  transform: translateY(-1px);
+}
+
+.action-button.reject {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.action-button.reject:hover {
+  background-color: #dc3545;
+  transform: translateY(-1px);
+}
+
+.action-button.processing {
+  background-color: #ffc107;
+  color: var(--text-color);
+}
+
+.action-button.processing:hover {
+  background-color: #e0a800;
+  transform: translateY(-1px);
+}
+
+.action-button.delivered {
+  background-color: #17a2b8;
+  color: var(--white);
+}
+
+.action-button.delivered:hover {
+  background-color: #138496;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 768px) {
+  .admin-dashboard-title {
+    font-size: 2rem;
+  }
+
+  .orders-table th,
+  .orders-table td {
+    padding: 10px;
+    font-size: 0.85rem;
+  }
+
+  .action-button {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+    margin-bottom: 5px; /* Stack buttons on smaller screens */
+    display: block; /* Make buttons take full width */
+    width: 100%;
+  }
+} 

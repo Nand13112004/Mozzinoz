@@ -1,0 +1,107 @@
+.admin-login-page-wrapper {
+  min-height: 100vh;
+  background-color: var(--light-grey); /* Light grey background for the page */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 20px;
+}
+
+.admin-login-form-container {
+  background: var(--white);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  padding: 40px 32px 32px 32px;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 1.2s ease-out;
+  border: 1px solid var(--medium-grey);
+}
+
+.admin-login-title {
+  font-weight: 800;
+  color: var(--text-color);
+  margin-bottom: 24px;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.form-group {
+  width: 100%;
+  margin-bottom: 18px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: var(--border-radius);
+  border: 1.5px solid var(--medium-grey);
+  font-size: 1rem;
+  outline: none;
+  margin-bottom: 2px;
+  background-color: var(--white);
+}
+
+.form-input:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(255, 107, 107, 0.1);
+}
+
+.admin-login-button {
+  width: 100%;
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 13px 0;
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: 1.08rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  margin-bottom: 18px;
+  margin-top: 18px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.admin-login-button:hover {
+  background-color: #ff5252;
+  transform: translateY(-2px);
+}
+
+.message-box {
+  color: var(--primary-color);
+  background: #ffeaea;
+  border-radius: 6px;
+  padding: 8px 12px;
+  width: 100%;
+  margin-top: 12px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1rem;
+  border: 1px solid #ff5252;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 480px) {
+  .admin-login-form-container {
+    padding: 30px 20px;
+  }
+
+  .admin-login-title {
+    font-size: 1.8rem;
+  }
+
+  .admin-login-button {
+    padding: 10px 0;
+    font-size: 1rem;
+  }
+} 

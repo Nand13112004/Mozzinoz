@@ -1,0 +1,106 @@
+.custom-pizza-builder {
+  max-width: 600px;
+  margin: 3rem auto;
+  padding: 2.5rem;
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--light-grey);
+  color: var(--text-color);
+  font-family: 'Poppins', sans-serif;
+}
+
+.custom-pizza-builder h2 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.custom-pizza-builder label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--dark-grey);
+  font-size: 1.05rem;
+}
+
+.custom-pizza-builder select,
+.custom-pizza-builder input[type="number"] {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--medium-grey);
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.custom-pizza-builder select:focus,
+.custom-pizza-builder input[type="number"]:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(255, 107, 107, 0.1);
+}
+
+.veggie-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.veggie-options label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+.veggie-options input[type="checkbox"] {
+  width: auto;
+  margin-bottom: 0;
+  margin-right: 0;
+}
+
+.custom-pizza-builder p strong {
+  color: var(--text-color);
+  font-size: 1.1rem;
+}
+
+.custom-pizza-builder button {
+  display: block;
+  width: 100%;
+  padding: 0.85rem;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 2rem;
+}
+
+.custom-pizza-builder button:hover {
+  background-color: #ff5252;
+  transform: translateY(-2px);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .custom-pizza-builder {
+    margin: 1.5rem 1rem;
+    padding: 1.5rem;
+  }
+
+  .custom-pizza-builder h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+}

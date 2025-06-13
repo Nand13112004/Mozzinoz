@@ -1,0 +1,63 @@
+.features-section {
+    background-color: var(--white);
+    box-shadow: var(--shadow);
+    border-radius: var(--border-radius);
+    padding: 2.5rem;
+    margin-top: -80px;
+    position: relative;
+    z-index: 10;
+    margin-bottom: 2.5rem;
+    border: 1px solid var(--light-grey);
+    width: 500%; /* keep within view */
+    max-width: 1350px;
+    /* Shift it slightly left */
+  }
+  
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  text-align: center;
+}
+
+.feature-item {
+  background-color: var(--white); /* Ensure card background is white */
+  box-shadow: none; /* Card already has shadow, remove duplicate */
+  border: none; /* Card already has border, remove duplicate */
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-icon {
+  font-size: 3rem;
+  color: var(--secondary-color); /* Light grey color for icons */
+  margin-bottom: 1rem;
+}
+
+.feature-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 0.75rem;
+}
+
+.feature-description {
+  font-size: 0.95rem;
+  color: var(--dark-grey);
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .features-section {
+    margin-top: -40px; /* Adjust for smaller screens */
+    padding: 1.5rem;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+} 

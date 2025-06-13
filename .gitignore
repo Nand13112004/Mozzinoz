@@ -1,0 +1,10 @@
+# Ignore all .env files anywhere
+**/.env
+
+# Or simply
+.env
+
+# (Rest of your global ignores)
+node_modules
+build
+.DS_Store

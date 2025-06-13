@@ -13,7 +13,6 @@ import { CartProvider } from './context/CartContext';
 import { AuthProvider, AuthContext } from './context/AuthContext';
 import PizzaDetail from './pages/PizzaDetail';
 import LandingPage from './pages/LandingPage';
-import PizzaList from './pages/PizzaList';
 import OrderTracking from './components/user/OrderTracking';
 import OrderManagement from './components/admin/OrderManagement';
 import InventoryDashboard from './components/admin/InventoryDashboard';

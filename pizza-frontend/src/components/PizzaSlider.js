@@ -64,7 +64,7 @@ const PizzaSlider = ({ pizzas, onAddToCart }) => {
     image: imageMap[pizza.name] || pizza.image,
   }));
 
-  const [pizzaList, setPizzaList] = useState(pizzasWithImages);
+  const [pizzaList] = useState(pizzasWithImages);
 
   const settings = {
     dots: false,

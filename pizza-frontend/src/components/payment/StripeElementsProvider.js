@@ -59,7 +59,7 @@ const StripeElementsProvider = ({ order, onSuccess, onError }) => {
     };
 
     createPaymentIntent();
-  }, [order?._id, order?.total]);
+  }, [order?._id, order?.total, onError]);
 
   if (loading) {
     return (
